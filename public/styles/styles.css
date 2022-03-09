@@ -59,7 +59,7 @@ header {
   cursor: pointer;
 }
 
-main {
+main .drop_container {
   background-image: url(../img/Taco-Bell-Demolition-Man-Comic-Con-Logo-Animated.gif);
   background-position: center;
   background-attachment: fixed;
@@ -70,17 +70,15 @@ main {
   gap: 10px;
   width: 100%;
 }
-main .img-container {
+main .drop_container .img-container {
   margin: auto;
   display: flex;
   width: 90%;
   justify-content: center;
   overflow: hidden;
-  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
-    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
-    rgba(240, 46, 170, 0.05) 25px 25px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
-main .img-container img {
+main .drop_container .img-container img {
   border-radius: 10px;
   width: 100%;
   cursor: pointer;
@@ -129,7 +127,7 @@ article .terms-conditions {
 }
 
 @media (min-width: 1000px) {
-  main {
+  .drop_container {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     background-color: black;
